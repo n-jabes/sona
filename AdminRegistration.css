@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 4.5rem;
+}
+
+.header .left {
+  /* width: 20%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .left .logo {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+.header .left .navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5rem;
+}
+
+.header .left .navlinks .link1,
+.header .left .navlinks .link2 {
+  margin-right: 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header .left .navlinks .link1 .border-b1,
+.header .left .navlinks .link2 .border-b2 {
+  height: 0.3rem;
+  width: 40%;
+  background: rgb(12, 173, 39);
+  margin-top: 0.2rem;
+  /* display: none; */
+}
+
+.header .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .right .top,
+.header .right .top .button,
+.header .right .bottom {
+  display: flex;
+}
+
+.header .right .top {
+  margin-bottom: 0.6rem;
+  align-items: center;
+}
+
+.header .right .top .button {
+  padding: 0.4rem 3.5rem;
+  background: rgb(123, 160, 230);
+  border-radius: 4rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.header .right .top i {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.header .right .bottom {
+  align-items: center;
+}
+
+.header .right .bottom .button {
+  padding: 0.4rem 1.5rem;
+  background: rgb(12, 173, 39);
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.header .right .bottom .date {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+form {
+  width: 60%;
+  margin-top: 5rem;
+  margin-left: 10%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(66, 66, 66);
+}
+
+form .input1 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+form .input1 label {
+  width: 25%;
+}
+
+form .input1 .inputs {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form .input1 .inputs .inputs1 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+form .input1 .inputs .inputs2 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+form .input1 .inputs .inputs2 i {
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  cursor: pointer;
+}
+
+form .input1 .inputs .inputs1 input,
+form .input1 .inputs .inputs2 input {
+  padding: 0.6rem 2rem;
+  outline: none;
+  border: 1px solid rgb(196, 195, 195);
+  border-radius: 0.4rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+form .input {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+form .input i {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+form .input input,
+form .input-textarea input {
+  width: 75%;
+  padding: 0.6rem 2rem;
+  outline: none;
+  border: 1px solid rgb(196, 195, 195);
+  border-radius: 0.4rem;
+  font-weight: 600;
+}
+
+form .input label {
+  width: 25%;
+}
+
+form .input-textarea {
+  display: flex;
+  align-items: start;
+  width: 80%;
+  margin-bottom: 1rem;
+  position: relative;
+  justify-content: space-between;
+}
+
+form .input-textarea .text-area {
+  width: 75%;
+  padding: 0.4rem 2rem;
+  outline: none;
+  border: 1px solid rgb(196, 195, 195);
+  border-radius: 0.4rem;
+  font-weight: 600;
+  height: 7.5rem;
+}
+
+form .sub label {
+  display: none;
+}
+
+form .submit {
+  padding: 0.5rem 3rem;
+  width: max-content;
+  background: rgb(13, 156, 13);
+  color: #fff;
+  border-radius: 0.4rem;
+  margin-left: 20%;
+  cursor: pointer;
+}

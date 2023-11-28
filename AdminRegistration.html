@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin View Registration</title>
+    <link rel="stylesheet" href="AdminRegistration.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <a
+          href="Login.html"
+          style="cursor: pointer; text-decoration: none; color: black"
+          class="logo"
+          >SiteID</a
+        >
+        <div class="navlinks">
+          <div class="link1">
+            <a
+              href="AdminRegistration.html"
+              style="text-decoration: none; color: black"
+              >ADD ADMIN</a
+            >
+            <div class="border-b1"></div>
+          </div>
+          <div class="link2">
+            <a href="TaskRegistration.html" style="text-decoration: none; color: black"
+              >ADD TASK
+            </a>
+            <div class="border-b2" style="background-color: white"></div>
+          </div>
+
+          <div class="link2">
+            <a
+              href="TaskList.html"
+              style="text-decoration: none; color: black"
+              >TASKS</a
+            >
+            <div class="border-b2" style="background-color: white"></div>
+          </div>
+
+          <div class="link2">
+            <span> <i class="fa-solid fa-plus"></i> </span>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="top">
+          <span class="button">PROFILE</span>
+          <i class="fa-solid fa-gear" style="color: rgb(161, 161, 161)"></i>
+        </div>
+        <div class="bottom">
+          <span class="button">LOGOUT</span>
+          <span class="date">23/09/09/09 : 00</span>
+        </div>
+      </div>
+    </div>
+
+    <form action="#">
+      <div class="input1">
+        <label>PERSONAL</label>
+        <div class="inputs">
+          <div class="inputs1">
+            <label for="info">NAME</label>
+            <input type="text" placeholder="1" />
+          </div>
+          <div class="inputs2">
+            <label for="info">AGE</label>
+            <i class="fa-solid fa-angle-down"></i>
+            <input type="text" placeholder="8" />
+          </div>
+        </div>
+      </div>
+      <div class="input">
+        <label for="info">INFORMATION</label>
+        <input type="text" placeholder="(UTC+09:00) DAY,MONTH,YEAR" />
+      </div>
+      <div class="input">
+        <label for="info">INCOMING(nbr)</label>
+        <i class="fa-solid fa-angle-down"></i>
+        <input
+          id="ticketNum"
+          type="number"
+          name="ticketNum"
+          list="defaultNumbers"
+          placeholder="8"
+        />
+      </div>
+
+      <div class="input">
+        <label for="info">OUTGOING (nbr)</label>
+        <i class="fa-solid fa-angle-down"></i>
+        <input
+          id="ticketNum"
+          type="number"
+          name="ticketNum"
+          list="defaultNumbers"
+          placeholder="15"
+        />
+      </div>
+
+      <div class="input-textarea">
+        <label for="info">TEXT-AREA</label>
+        <textarea type="text" class="text-area" cols="53"></textarea>
+      </div>
+
+      <div class="submit">SUBMIT</div>
+    </form>
+  </body>
+</html>
